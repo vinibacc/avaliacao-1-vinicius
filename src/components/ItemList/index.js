@@ -18,26 +18,31 @@ const styles = {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   newItem: {
     display: 'flex',
     flex: 1
   },
   submit: {
+    width: 200,
+    marginTop: 20,
     border: 0,
-    borderRadius: 0,
+    padding: '0.75rem',
+    borderRadius: 20,
     backgroundColor: '#38435a',
     color: '#fff',
     padding: '0.5rem'
   },
   refresh: {
-    backgroundColor: '#ea454b',
+    backgroundColor: '#f3f3f3',
     padding: '0.75rem',
     marginTop: 20,
     border: 0,
-    color: '#fff',
-    alignSelf: 'flex-end'
+    borderRadius: 20,
+    color: '#000',
+    alignSelf: 'center'
   }
 }
 
@@ -47,6 +52,7 @@ class ItemList extends Component {
     items: [],
     category: '',
     user: null,
+    ID: Date.now(),
     isLoading: true
   }
 
@@ -117,7 +123,7 @@ class ItemList extends Component {
         ) : (
           <React.Fragment>
             <button onClick={this.refresh} style={styles.refresh}>
-              Atualizar
+              Atualizar Lista de Items
             </button>
             <Items items={items} />
           </React.Fragment>

@@ -3,12 +3,13 @@ import Item from '../Item'
 
 const styles = {
   items: {
+    backgroundColor: '#fff',
     display: 'flex',
     flexDirection: 'column',
     marginTop: 20,
     width: '100%',
     padding: 20,
-    border: '1px solid #38435a',
+    borderTop: '1px solid #38435a',
     boxSizing: 'border-box'
   },
   center: {
@@ -20,7 +21,7 @@ export default props => {
   const { items } = props
   return (
     <div style={styles.items}>
-      <h2 style={styles.center}>Linha do tempo</h2>
+      <h2 style={styles.center}>Lista</h2>
       {items.length === 0 ? (
         <h4 style={styles.center}>Não há items para serem mostrados</h4>
       ) : (
