@@ -1,4 +1,4 @@
-import api from './api'
+import client from '../providers/client'
 
-export const login = credentials => api.post('users/login', credentials)
-export const signUp = credentials => api.post('/users/singup', credentials)
+export const login = credentials =>
+  client.post('users/login', credentials)

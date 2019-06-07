@@ -1,0 +1,21 @@
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #38435a;
+    background-color: #f3f3f3;
+    margin-top: 20px;
+  }
+  .name {
+    text-align: center;
+    background-color: #38435a;
+    color: #fff;
+    padding: 5px 10px;
+  }
+  .props{
+      display: flex;
+      justify-content: space-around;
+  }
+  .text {
+    padding: 20;
+  }

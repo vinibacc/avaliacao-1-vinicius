@@ -1,0 +1,30 @@
+body {
+  background-color: blueviolet;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+.form h1{
+  color: beige;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  color: bisque;
+  width: 200px;
+  background-color: rgb(54, 15, 90);
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  border: 2px solid rgb(54, 15, 90);
+  margin-bottom: 5px;
+}
